@@ -21,6 +21,7 @@ for eq_dict in all_eq_dicts:
     lats.append(eq_dict['geometry']['coordinates'][1])
     place.append(eq_dict['properties']['title'])
 
+# удаление типа данных 'NoneType'
 for i in mags:
     if type(i) == float or type(i) == int:
         continue
